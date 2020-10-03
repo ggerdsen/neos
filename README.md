@@ -23,18 +23,21 @@ Please follow these instructions for further enlightenment.
 With your partner look through `start.rb` and `near_earth_objects.rb`
 
 - Discuss is this 'good' or 'bad' code? Why?
-
+In the `near_earth_objects.rb` file, I think that many of these calculations could be broken down into individual methods.  In `start.rb` I am not sure much should be change since this is more of a "runner file" (right?).
 ---
 
 ### Identify the responsibilities (10 min)
 
 With your Partner, identify the different responsibilities that exist in each file.
 
-- Does this adhere to SRP?
+- Does this adhere to SRP?    
+No, the `find_neos_by_date` performs all functions for the class
 
-- How would you utilize encapsulation and abstraction to refactor this code?
+- How would you utilize encapsulation and abstraction to refactor this code?    
+We could make the variables in the `find_neos_by_date` method private and write public methods to fill these variables.
 
-- What tools/strategies could you utilize to make this code adhere to SRP?
+- What tools/strategies could you utilize to make this code adhere to SRP?    
+Break down `find_neos_by_date` method into individual methods that each have a single responsibility.
 
 ---
 
